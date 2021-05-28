@@ -1,0 +1,110 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background: #ddd;
+}
+.circle{
+  position: absolute;
+  top: 35%;
+  left: 40%;
+  width:100px;
+  height: 100px;
+  border-radius: 50%;
+  border: 10px solid gray;
+  border-top: 10px solid white;
+  transform: translate(50%,50%);
+  animation: animate 1.5s infinite linear;
+}
+@keyframes animate {
+0%{
+    transform: translate(50%,50%) rotate(0deg);
+}
+100%{
+    transform: translate(50%,50%) rotate(360deg);
+}
+}
+
+.circle1{
+  position: absolute;
+  top: 35%;
+  left: 20%;
+  width:100px;
+  height: 100px;
+  border-radius: 0%;
+  border: 10px solid gray;
+  border-top: 10px solid white;
+  transform: translate(50%,50%);
+  animation: anni 1.5s infinite linear;
+}
+@keyframes anni {
+100%{
+    transform: translate(275%,50%) rotate(360deg);
+}
+}
+
+.circle2{
+  position: absolute;
+  top: 35%;
+  left: 60%;
+  width:100px;
+  height: 100px;
+  border-radius: 0%;
+  border: 10px solid gray;
+  border-top: 10px solid white;
+  transform: translate(50%,50%);
+  animation: anni2 1.5s infinite linear;
+}
+@keyframes anni2 {
+100%{
+    transform: translate(-275%,50%) rotate(360deg);
+}
+
+}
+.fanc{
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  left: 13.8%;
+  top: 22%;
+  border-radius: 50%;
+  background: gray;
+}
+.fan{
+  position: absolute;
+  width: 20px;
+  height: 200px;
+  left: 15%;
+  top: 30%;
+  background: gray;
+}
+.line{
+  width: 10px;
+  height: 150px;
+  background: gray;
+  position: absolute;
+  left: 15%;
+  top: 3%;
+  transform: translate(50%,50%);
+  animation: line 1s infinite linear;
+}
+@keyframes line {
+100%{
+  transform: translate(50%,50%)rotate(360deg);
+}
+}
+.line1{
+  width: 150px;
+  height: 10px;
+  background: gray;
+  position: absolute;
+  left: 4%;
+  top: 25%;
+  transform: translate(50%,50%);
+  animation: line1 1s infinite linear;
+}
+@keyframes line1 {
+100%{
+  transform: translate(50%,50%)rotate(360deg);
+}
+}
